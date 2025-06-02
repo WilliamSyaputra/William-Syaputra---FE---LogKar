@@ -1,13 +1,22 @@
+"use client";
 import { Link } from "@heroui/link";
 import { Snippet } from "@heroui/snippet";
 import { Code } from "@heroui/code";
 import { button as buttonStyles } from "@heroui/theme";
+import { useRouter } from "next/navigation";
+import { useEffect } from "react";
 
 import { siteConfig } from "@/config/site";
 import { title, subtitle } from "@/components/primitives";
 import { GithubIcon } from "@/components/icons";
 
 export default function Home() {
+  const router = useRouter();
+
+  useEffect(() => {
+    router.push("/order"); // Automatically navigate to /order
+  }, [router]);
+
   return (
     <section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
       <div className="inline-block max-w-xl text-center justify-center">

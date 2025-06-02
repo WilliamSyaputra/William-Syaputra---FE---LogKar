@@ -1,5 +1,3 @@
-// import { User, Column, StatusOption } from "./types";
-
 import { ChipProps } from "@heroui/react";
 
 export const columns = [
