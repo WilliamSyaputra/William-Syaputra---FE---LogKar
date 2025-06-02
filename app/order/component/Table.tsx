@@ -81,10 +81,10 @@ export default function OrderTable({
               <TableCell className="px-4 py-2 text-sm">{item.do_id}</TableCell>
               <TableCell className="px-4 py-2 text-sm max-w-[100px]">
                 <div className="relative group cursor-pointer">
-                  <span className="block truncate text-sm text-black-800">
+                  <span className="block truncate text-sm text-white-800">
                     {item.goods_name}
                   </span>
-                  <div className="absolute hidden group-hover:block bg-black-700 text-black text-xs rounded px-2 py-1 z-10 mt-1">
+                  <div className="absolute hidden group-hover:block bg-white-700 text-white text-xs rounded px-2 py-1 z-10 mt-1">
                     {item.goods_name}
                   </div>
                 </div>
